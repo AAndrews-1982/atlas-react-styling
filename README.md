@@ -1,5 +1,9 @@
 # atlas-react-styling
 
+![image](https://github.com/user-attachments/assets/944ee9ea-64d5-4b38-947a-630e4720cc1b)
+
+![image](https://github.com/user-attachments/assets/ad095779-8782-4bca-bd2e-02c0a8e0f45f)
+
 ## Concepts
 For this project, we expect you to look at this concept:
 
