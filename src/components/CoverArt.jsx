@@ -1,15 +1,18 @@
 // src/components/CoverArt.jsx
 
 import React from 'react';
-import coverArt from '../assets/placeholder.svg'; // Path for cover image
+import coverArt from '../assets/placeholder.svg'; // Path to placeholder image
 
 const CoverArt = () => {
   return (
-    <div className="w-32 h-32 overflow-hidden rounded-lg border border-gray-300">
-      <img src={coverArt} alt="Cover Art" className="w-full h-full object-cover" />
+    <div className="flex justify-center items-center">
+      <img 
+	src={coverArt} // Using imported image
+	alt="Cover Art"
+	className="w-100 h-100 object-cover rounded-lg border-2 border-gray-300"
+	/>
     </div>
   );
 };
 
 export default CoverArt;
-
