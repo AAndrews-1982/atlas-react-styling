@@ -2,13 +2,16 @@
 
 import React from 'react';
 
-const SongTitle = ({ title, author }) => {
+export default function SongTitle() {
+
   return (
-    <div className="text-center">
-      <h2 className="text-xl font-bold">{title}</h2>
-      <p className="text-gray-600">{author}</p>
+    <div className="song-details">
+      <h2 className="title mb-3 text-xl font-semibold">
+        Classic Man
+      </h2>
+      <p className="artist-name text-sm text-gray-500 dark:text-gray-400">
+        Jidenna feat. Kendrick Lamar
+      </p>
     </div>
   );
-};
-
-export default SongTitle;
+}

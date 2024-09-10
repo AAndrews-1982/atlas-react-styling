@@ -1,18 +1,22 @@
 // src/components/PlayListItem.jsx
 
-import React from 'react';
+export default function PlayListItem({ songTitle, artist, playTime }) {
 
-const PlayListItem = ({ title, genre, length }) => {
   return (
-    <div className="flex justify-between items-center p-2 border-b border-gray-300">
-      <div>
-        <h3 className="text-lg font-medium">{title}</h3>
-        <p className="text-gray-600 text-sm">{genre}</p>
+    <div className="playlist-item-container mb-2 flex h-12 cursor-pointer items-center
+        justify-between rounded-lg text-base font-normal bg-transparent 
+        hover:bg-gray-200 active:bg-gray-400 dark:hover:bg-gray-200 dark:active:bg-gray-400">
+      <div className="song-details">
+        <div className="title font-semibold text-gray-800 dark:text-gray-600">
+          {songTitle}
+        </div>
+        <div className="artist-name text-sm text-gray-500 dark:text-gray-400">
+          {artist}
+        </div>
       </div>
-      <p className="text-gray-600">{length}</p>
+      <div className="duration text-gray-500 dark:text-gray-400">
+        {playTime}
+      </div>
     </div>
   );
-};
-
-export default PlayListItem;
-
+}
