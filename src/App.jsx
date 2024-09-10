@@ -1,16 +1,17 @@
 // src/App.jsx
 
-import React from 'react';
-import CoverArt from './components/CoverArt'; // Imports Cover Art
-import CurrentlyPlaying from './components/CurrentlyPlaying'; // Imports CurrentPlaying
-import Footer from "./components/Footer"; // Imports Footer
-import MusicPlayer from "./MusicPlayer"; // Imports the Music Player
+import Footer from "./components/Footer";
+import MusicPlayer from "./MusicPlayer";
+import PlayList from "./components/PlayList";
+import CurrentlyPlaying from "./components/CurrentlyPlaying";
 
 function App() {
   return (
-    <div className="h-full flex flex-col justify-between p-8 min-h-screen">
-	<CoverArt /> {/* Render CoverArt */}
-	<CurrentlyPlaying />
+    <div className="flex h-full text-dark-text-color bg-main-background min-h-screen flex-col justify-between items-center p-8">
+      <MusicPlayer>
+        <CurrentlyPlaying />
+        <PlayList />
+      </MusicPlayer>
       <Footer />
     </div>
   );

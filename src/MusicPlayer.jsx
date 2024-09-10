@@ -1,13 +1,12 @@
-// src/MusicPlayer.jsx
+// src/components/MusicPlayer.jsx
 
-import React from 'react';
-import CurrentlyPlaying from './components/CurrentlyPlaying';
+// MusicPlayer Component
 
-export default function MusicPlayer() {
+export default function MusicPlayer({ children }) {
+
   return (
-    <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
-      <CurrentlyPlaying />
-      {/* You can add more components or content here if needed */}
+    <div className="music-container bg-player-background dark:bg-dark-player-background flex flex-wrap md:flex-nowrap max-w-4xl mx-auto rounded-md shadow-md">
+      {children}
     </div>
   );
 }
